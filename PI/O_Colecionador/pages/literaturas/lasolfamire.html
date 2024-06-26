@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>The Collector</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <div class="logo">
+                            <img src="../../imagem/logo mini.png" alt="logo do The Collector. Um C com um adorno renascentista no fundo." class="img-fluid">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="../../home.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../gallery.html#highlights">Highlights</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../gallery.html#gallery">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../home.html#homeAboutSection">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row flex-row-reverse">
+            <aside class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body bg-light">
+                        <h2 class="card-title">Title of the work:</h2>
+                        <p class="card-text">Missa La sol fa re mi</p>
+                        <h2 class="card-title">Autor's name:</h2>
+                        <p class="card-text">Josquin des Prez</p>
+                        <h2 class="card-title">Year of the work:</h2>
+                        <p class="card-text">1502</p>
+                        <h2 class="card-title">Description:</h2>
+                        <p class="card-text">The Missa La sol fa re mi is a musical setting of the mass by Josquin des Prez, first published in 1502. It is one of his most famous masses, and one of the earliest and most renowned examples of the soggetto cavato technique – the technique of deriving musical notes from the syllables of a phrase, in this case "Lascia fare mi" (Italian: "let me do it").</p>
+                    </div>                    
+                </div>
+            </aside>
+            <div class="col-md-8">
+                <section class="mb-4">
+                    <img src="../../imagem/LITERATURA/LA SOL FA RE MI.jpeg" class="img-fluid" alt="MIssa La Sol Fa Re Mi">
+                </section>
+                <section>
+                    <h1>Leave your Comment</h1>
+                    <form id="comentario-form">
+                        <div class="mb-3">
+                            <label for="comentario" class="form-label">Comment:</label>
+                            <textarea id="comentario" name="comentario" class="form-control" rows="4" placeholder="Type your comment here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div id="comentarios-fixados" class="mt-4">
+                        <h2>Fixed Comments</h2>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024. All rights reserved.</p>
+            <p>Contact: <a href="mailto:the.collector@outlook.com">the.collector@outlook.com</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('comentario-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário para o servidor
+            
+            // Obtém o valor do comentário
+            var comentario = document.getElementById('comentario').value;
+            
+            // Cria um novo elemento de comentário
+            var comentarioElemento = document.createElement('div');
+            comentarioElemento.className = 'comentario alert alert-secondary mt-3';
+            comentarioElemento.textContent = comentario;
+            
+            // Adiciona o novo comentário à lista de comentários fixados
+            document.getElementById('comentarios-fixados').appendChild(comentarioElemento);
+            
+            // Limpa o campo de texto
+            document.getElementById('comentario').value = '';
+        });
+    </script>
+</body>
+</html>
