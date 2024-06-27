@@ -3,7 +3,9 @@ Projeto Interdisciplinar do primeiro semestre do curso de DSM na Fatec Marília.
 
 ## Informações Básicas
 **Tecnologias Utilizadas:** Bootstrap, CSS, HTML, JavaScript;
+
 **Autores:** Luca Yarmak, Bruno Sassi, Carlos Eduardo Cumpiam, Bruno Yamacuti;
+
 
 ### “ Criação de uma página que exiba a coleção de quadros de um colecionador de artes excêntrico”
 
