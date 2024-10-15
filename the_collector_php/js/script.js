@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+// revelations :O
 window.addEventListener('scroll', reveal);
 
 function reveal(){
