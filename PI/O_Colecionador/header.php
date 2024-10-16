@@ -13,10 +13,10 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.php">Highlights</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.php">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.php#highlights">Highlights</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.php#gallery">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.php#homeAboutSection">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                         </ul>
                     </div>
